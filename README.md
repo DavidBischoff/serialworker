@@ -13,8 +13,8 @@ sp = Serialworker::Serialworker.new("/dev/ttyUSB0")
 Reading
 ============
 ```ruby
-# READ 6 BIT AND RETURN THEM AS STRING
-sp.read(:bits => 5)
+# READ 6 BIT AND RETURN THEM AS A STRING
+sp.read(:bits => 6)
 # READ TILL A CARRIAGE RETURN IS RECEIVED
 sp.read(:stop => '\r')
 # RETURNS AN ARRAY OF 6 INTEGER VALUES
